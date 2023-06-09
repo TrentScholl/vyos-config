@@ -20,17 +20,17 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 start
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 range 0 stop '10.1.3.254'
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-inverter ip-address '10.1.3.21'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-inverter '84:d6:c5:47:c0:0d'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garage-inverter mac-address '84:d6:c5:47:c0:0d'
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-speaker-01 ip-address '10.1.3.31'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-speaker-01 'e4:f0:42:16:1d:28'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-speaker-01 mac-address 'e4:f0:42:16:1d:28'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-speaker-02 ip-address '10.1.3.32'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-speaker-02 '20:df:b9:48:45:8a'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-speaker-02 mac-address '20:df:b9:48:45:8a'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-hub-01 ip-address '10.1.3.33'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-hub-01 'ac:67:84:1f:2b:f9'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping nest-hub-01 mac-address 'ac:67:84:1f:2b:f9'
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hue-bridge ip-address '10.1.3.41'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hue-bridge '00:17:88:10:90:d6'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hue-bridge mac-address '00:17:88:10:90:d6'
 
 # LAN
 set service dhcp-server shared-network-name LAN authoritative
