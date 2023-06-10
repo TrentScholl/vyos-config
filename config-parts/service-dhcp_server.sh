@@ -42,7 +42,7 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 start
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 range 0 stop '10.1.0.254'
 
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping ap01 ip-address '10.1.0.21'
-set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping ap01 mac-address '24-5a-4c-13-ef-34'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping ap01 mac-address '24:5a:4c:13:ef:34'
 
 # Servers VLAN
 set service dhcp-server shared-network-name SERVERS authoritative
