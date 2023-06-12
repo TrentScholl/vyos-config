@@ -27,11 +27,11 @@ set nat destination rule 104 translation address '10.1.0.1'
 set nat destination rule 104 translation port '123'
 
 set nat destination rule 105 description 'Force NTP for Servers'
-set nat destination rule 105 destination address '!10.1.1.1'
+set nat destination rule 105 destination address '!10.0.10.1'
 set nat destination rule 105 destination port '123'
 set nat destination rule 105 inbound-interface 'eth1.10'
 set nat destination rule 105 protocol 'udp'
-set nat destination rule 105 translation address '10.1.1.1'
+set nat destination rule 105 translation address '10.0.10.1'
 set nat destination rule 105 translation port '123'
 
 set nat destination rule 106 description 'Force NTP for Trusted'

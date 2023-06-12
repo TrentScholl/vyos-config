@@ -47,26 +47,26 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 # Servers VLAN
 set service dhcp-server shared-network-name SERVERS authoritative
 set service dhcp-server shared-network-name SERVERS ping-check
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 default-router '10.1.1.1'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 domain-name 'trentscholl.com'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 lease '86400'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-server '10.5.0.4'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 default-router '10.0.10.1'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 domain-name 'trentscholl.com'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 lease '86400'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 name-server '10.5.0.4'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 range 0 start '10.0.10.200'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 range 0 stop '10.0.10.254'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-01 ip-address '10.1.1.21'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-01 mac-address '00:0c:29:7f:d4:e7'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-02 ip-address '10.1.1.22'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-02 mac-address '00:0c:29:ea:5d:99'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-03 ip-address '10.1.1.23'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-03 mac-address '00:0c:29:7c:95:69'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-04 ip-address '10.1.1.24'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-04 mac-address '00:0c:29:64:21:cc'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-05 ip-address '10.1.1.25'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping k8s-05 mac-address '00:0c:29:46:9c:44'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-01 ip-address '10.0.10.21'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-01 mac-address '00:0c:29:7f:d4:e7'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-02 ip-address '10.0.10.22'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-02 mac-address '00:0c:29:ea:5d:99'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-03 ip-address '10.0.10.23'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-03 mac-address '00:0c:29:7c:95:69'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-04 ip-address '10.0.10.24'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-04 mac-address '00:0c:29:64:21:cc'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-05 ip-address '10.0.10.25'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping k8s-05 mac-address '00:0c:29:46:9c:44'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping ipm ip-address '10.1.1.41'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping ipm mac-address '00:0c:29:d2:ed:eb'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping ipm ip-address '10.0.10.41'
+set service dhcp-server shared-network-name SERVERS subnet 10.0.10.0/24 static-mapping ipm mac-address '00:0c:29:d2:ed:eb'
 
 
 # Trusted VLAN
